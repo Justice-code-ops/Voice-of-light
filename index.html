@@ -53,7 +53,7 @@
         <use href="#eighth-note" x="650" y="210" transform="scale(1)" />
     </svg>
 
-    <div class="grid grid-cols-[1fr_3fr] p-4 fixed z-10 top-0 h-screen">
+    <div class="grid md:grid-cols-[1fr_3fr] grid-cols-1 p-4 absolute z-10 top-0 md:h-screen">
         <div class="info flex flex-col items-center md:gap-10">
             <img src="./src/assets/image.png" alt="VOL Logo" class="w-25 h-25">
             <div class="flex flex-col items-center">
@@ -63,13 +63,13 @@
                 <p class="w-75 text-center">Join our choir family and be a part of something beautiful</p>
             </div>
         </div>
-        <div class="form text-black bg-white rounded-xl p-4 font-serif w-full overflow-y-auto">
+        <div class="form text-black bg-white rounded-xl p-4 font-serif w-full md:overflow-y-scroll">
             <h3 class="text-center text-5xl text-amber-500 font-pinyon font-semibold">Choir Registration</h3>
             <p class="text-center my-2">Please fill in the form to register</p>
             <div class="w-full h-0.5 bg-linear-to-r from-white via-amber-400 to-white my-3"></div>
             <form action="https://formsubmit.co/nwazuokejustice57@gmail.com" method="POST">
                 <p class="text-2xl font-semibold">Personal Information</p>
-                <div class="flex md:gap-4 my-4">
+                <div class="flex flex-col md:flex-row md:gap-4 my-4">
                     <div class="flex-1">
                         <label for="first-name">First Name *</label>
                         <input type="text" placeholder="Enter your first name" id="first-name" name="firstName" required class="">
@@ -87,13 +87,13 @@
                     <label for="phone-number">Phone Number *</label>
                     <input type="number" placeholder="Enter your Phone Number" name="phoneNumber" required>
                 </div>
-                <div class="flex gap-4">
+                <div class="flex flex-col md:flex-row gap-4">
                     <div class="flex-1">
                         <label for="d.o.b">Date of Birth (Optional)</label>
                         <input type="date" name="d.o.b">
                     </div>
-                    <div class="flex-1">
-                        <label for="gender" class="block">Gender *</label>
+                    <div class="flex-1 flex-row md:flex-col w-full">
+                        <label for="gender" class="md:block">Gender *</label>
                         <select name="gender" id="gender" class="border border-gray-200 p-1.5 rounded-md w-full">
                             <option value="select" selected>--Select an Option--</option>
                             <option value="male">Male</option>
@@ -117,7 +117,7 @@
                     </div>
                 </div>
                 <p class="font-semibold text-2xl">Choir Information</p>
-                <div class="flex md:gap-4">
+                <div class="flex flex-col md:flex-row gap-4 md:gap-4">
                     <div class="flex-1">
                         <label for="voicepart" class="block">Voice Part *</label>
                         <select name="voicePart" id="voicepart" required class="border border-gray-200 p-1.5 rounded-md w-full">

@@ -11,7 +11,7 @@
   --font-poppins: "Poppins", sans-serif;
 }
 input {
-    @apply block w-full border border-gray-300 rounded-md p-1;
+    @apply md:block w-full border border-gray-300 rounded-md p-1;
 }
 form > div {
     @apply my-4;

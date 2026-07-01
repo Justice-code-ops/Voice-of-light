@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voice of Light Registration Form</title>
     <link rel="stylesheet" href="/src/output.css">
 </head>
+
 <body class="bg-linear-to-b from-blue-950 to-blue-900 h-screen text-white">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" width="100%" height="100%" class="relative">
         <!-- Deep Blue Background -->
@@ -13,17 +15,17 @@
 
         <defs>
             <!-- Define a single reusable staff line curve -->
-            <path id="staff-line" d="M -50 140 C 150 70, 250 260, 450 230 C 600 200, 700 80, 850 130" 
-                fill="none" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.08" />
+            <path id="staff-line" d="M -50 140 C 150 70, 250 260, 450 230 C 600 200, 700 80, 850 130" fill="none"
+                stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.08" />
 
             <!-- Define a reusable eighth note -->
             <g id="eighth-note" fill="#ffffff" fill-opacity="0.09">
-            <!-- Tilted note head -->
-            <ellipse cx="0" cy="0" rx="11" ry="7" transform="rotate(-25)" />
-            <!-- Stem -->
-            <rect x="7" y="-35" width="2.5" height="35" rx="0.5" />
-            <!-- Flag/Hook -->
-            <path d="M 9.5 -35 C 18 -27, 18 -15, 23 -12 C 21 -18, 16 -28, 9.5 -32 Z" />
+                <!-- Tilted note head -->
+                <ellipse cx="0" cy="0" rx="11" ry="7" transform="rotate(-25)" />
+                <!-- Stem -->
+                <rect x="7" y="-35" width="2.5" height="35" rx="0.5" />
+                <!-- Flag/Hook -->
+                <path d="M 9.5 -35 C 18 -27, 18 -15, 23 -12 C 21 -18, 16 -28, 9.5 -32 Z" />
             </g>
         </defs>
 
@@ -39,16 +41,16 @@
         <!-- Floating Music Notes scaled and positioned to match the image -->
         <!-- Far Left Note -->
         <use href="#eighth-note" x="120" y="155" transform="scale(0.9)" />
-        
+
         <!-- Second Note (Lower) -->
         <use href="#eighth-note" x="280" y="240" transform="scale(0.85)" />
-        
+
         <!-- High Center Note -->
         <use href="#eighth-note" x="530" y="110" transform="scale(0.95)" />
 
         <!-- Center-Right Note (Lower) -->
         <use href="#eighth-note" x="430" y="270" transform="scale(1.05)" />
-        
+
         <!-- Far Right Note -->
         <use href="#eighth-note" x="650" y="210" transform="scale(1)" />
     </svg>
@@ -57,9 +59,11 @@
         <div class="info flex flex-col items-center md:gap-10">
             <img src="./src/assets/image.png" alt="VOL Logo" class="w-25 h-25">
             <div class="flex flex-col items-center">
-                <h2 class="md:text-3xl font-serif">VOICE OF LIGHT <span class="block text-center text-amber-200">CHORALE</span></h2>
+                <h2 class="md:text-3xl font-serif">VOICE OF LIGHT <span
+                        class="block text-center text-amber-200">CHORALE</span></h2>
                 <div class="w-1/2 h-0.5 bg-linear-to-r from-blue-950 via-amber-200 to-blue-950 my-3"></div>
-                <h3 class="text-3xl font-serif text-start md:p-4">YOUR VOICE, <span class="block text-amber-200">OUR HARMONY</span></h3>
+                <h3 class="text-3xl font-serif text-start md:p-4">YOUR VOICE, <span class="block text-amber-200">OUR
+                        HARMONY</span></h3>
                 <p class="w-75 text-center">Join our choir family and be a part of something beautiful</p>
             </div>
         </div>
@@ -67,12 +71,13 @@
             <h3 class="text-center text-5xl text-amber-500 font-pinyon font-semibold">Choir Registration</h3>
             <p class="text-center my-2">Please fill in the form to register</p>
             <div class="w-full h-0.5 bg-linear-to-r from-white via-amber-400 to-white my-3"></div>
-            <form action="https://formsubmit.co/94e3e2937afa0005839394c7d5d10985" method="POST">
+            <form action="https://formsubmit.co/voxluminachorale@gmail.com" method="POST">
                 <p class="text-2xl font-semibold">Personal Information</p>
                 <div class="flex flex-col md:flex-row md:gap-4 my-4">
                     <div class="flex-1">
                         <label for="first-name">First Name *</label>
-                        <input type="text" placeholder="Enter your first name" id="first-name" name="firstName" required class="">
+                        <input type="text" placeholder="Enter your first name" id="first-name" name="firstName" required
+                            class="">
                     </div>
                     <div class="flex-1">
                         <label for="last-name">Last Name *</label>
@@ -104,7 +109,8 @@
                 <p class="text-2xl font-semibold">Address</p>
                 <div>
                     <label for="address">House Address *</label>
-                    <input type="text" id="address" name="streetaddress" autocomplete="street-address" placeholder="Enter your street address" required>
+                    <input type="text" id="address" name="streetaddress" autocomplete="street-address"
+                        placeholder="Enter your street address" required>
                 </div>
                 <div>
                     <div>
@@ -120,7 +126,8 @@
                 <div class="flex flex-col md:flex-row gap-4 md:gap-4">
                     <div class="flex-1">
                         <label for="voicepart" class="block">Voice Part *</label>
-                        <select name="voicePart" id="voicepart" required class="border border-gray-200 p-1.5 rounded-md w-full">
+                        <select name="voicePart" id="voicepart" required
+                            class="border border-gray-200 p-1.5 rounded-md w-full">
                             <option value="option" selected>--select an option--</option>
                             <option value="soprano">Soprano</option>
                             <option value="alto">Alto</option>
@@ -131,7 +138,7 @@
                     <div class="flex-1">
                         <label for="about-us" class="block">How did you hear about us?</label>
                         <select name="about us" id="about-us" class="border border-gray-200 p-1.5 rounded-md w-full">
-                            <option value="option"selected>--Select an option--</option>
+                            <option value="option" selected>--Select an option--</option>
                             <option value="social-media">Social Media</option>
                             <option value="friends">Friends/family</option>
                             <option value="programs">Our Programs</option>
@@ -141,7 +148,8 @@
                 </div>
                 <div>
                     <label for="experience" class="block">Choir Experience *</label>
-                    <select name="choirExperience" id="experience" required class="border border-gray-200 p-1.5 rounded-md w-full">
+                    <select name="choirExperience" id="experience" required
+                        class="border border-gray-200 p-1.5 rounded-md w-full">
                         <option value="option">--Select an option--</option>
                         <option value="none">Beginner</option>
                         <option value="less_than_one">Less than one Year</option>
@@ -156,7 +164,8 @@
                 </div>
                 <div class="flex items-center gap-3">
                     <input type="checkbox" value="Terms and Conditions" required class="flex-1 w-4 h-4">
-                    <span class="flex-4/4">I agree to the choir's <a href="terms.html" target="_blank" class="text-amber-400 underline">terms and conditions</a></span>
+                    <span class="flex-4/4">I agree to the choir's <a href="terms.html" target="_blank"
+                            class="text-amber-400 underline">terms and conditions</a></span>
                 </div>
                 <input type="submit" value="Submit Registration" class="bg-blue-950 text-white">
             </form>
@@ -164,4 +173,5 @@
     </div>
 
 </body>
+
 </html>
